@@ -1,0 +1,3 @@
+Options -Indexes
+
+<!-- // itu artinya selama ada user yang akses selain index maka akan di tolak -->

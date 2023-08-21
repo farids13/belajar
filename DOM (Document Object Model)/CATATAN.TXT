@@ -1,0 +1,5 @@
+////////////////////////DOM///////////////////////////
+ADALAH ANTARMUKA PEMROGRAMAN UNTUK HTML YANG MEMPRESENTASIKAN HALAMAN
+WEB, SEHINGGA PROGRAM DAPAT MENGUBAH DAN MEMANIPULASI STRUKTURNYA
+atau
+Representasi elemen HTML pada dokumen menjadi sebuah object

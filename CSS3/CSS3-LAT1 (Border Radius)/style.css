@@ -1,0 +1,22 @@
+div{
+    height: 400px;
+    width: 600px;
+    background-color:  blue;
+    margin: auto;
+    border-radius: 100px 200px 100px 200px; 
+    /* border radius juga bisa seperti margin penulisannya jadi enak lebih simple\
+        contoh nya seperti ini 
+        border-radius: 10px;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;   
+        untuk penulisan dengan format 4 nilai hiutngnya sama 
+        searah jarum jam jadi atas kanan kiri bawah
+        kemudian enaknya lagi bisa di sisipkan foto kayak di photosop
+        mengikuti bentuk dari objectnya fotonya keren
+    */
+    background-image: url(1.jfif);
+    text-align: center;
+    color: white;    
+    font: 15px Arial;
+    line-height: 40px;
+}

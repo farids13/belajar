@@ -1,0 +1,39 @@
+<?php 
+/*  MVC = Model View Controller
+    Definisi
+    Sederhanya pola arsitektur pada perancangan perangkat lunak berioroentasi objek
+
+    Tujuan
+    Untuk Memisahkan Antara Tampilan data dan proses.
+    
+    Pada MVC yang menjadi utama yaitu 3 komponen nya
+    model = Data
+    Controller = Proses
+    view = Tampilan
+
+    fungsi fungsi dari ke 3 komponen diata:
+    1. Model
+        -Representasi Pengetahuan
+        -Mengelola Data
+        -Logika Bisnis
+    2. Controller
+        -Perantara antara Model dan view
+        -Menangani Pemrosesan pada Aplikasi
+        -Menangani aksi dari user
+    3. View
+        -Output,apa yang dilihat oleh user
+        -Representasi visual dari model
+        -Lapisan Presentasi
+
+
+    Kenapa harus belajar MVC
+    . Organisasi dan Struktur Kode Yang baik
+    . Untuk Memisahkan Logic dan Tampilan
+    . Perawatan Kode lebih Mudah
+    . Implementasi Konsep OOP yang sudah di pelajari
+    . Digunakan Oleh banyak Web Aplication Framework
+
+    htacces disini sangat digunakan untuk mempercantik tampilan url nya
+ */
+ 
+ ?>

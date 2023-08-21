@@ -1,0 +1,67 @@
+.container  {
+    border: 1px solid black;
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+.satu, .dua, .tiga {
+    width: 100px;
+    height: 100px;
+}
+.satu{
+    background-color: salmon;
+    position: relative;
+    top: 30px;
+}
+.dua{
+    background-color: green;
+    float: right;
+    /*float itu untuk memaksa object yang di inginkan
+    sesuia dengan perintah left atau right jadi dia kalau di word
+    sama seperti gambar yang di beri layer square di word
+    jadi foto akan ada disamping yang di beri float*/
+}
+.tiga{
+    background-color: blue;
+}
+.cobafloat{
+    width:  1500px;
+    margin: auto;
+    border: 1px solid black;
+}
+img{
+    float: left;
+}
+.bersihkanfloat{
+    clear:left;
+    /*fungsi clear disini untuk menghilangkan kerusakan
+    yang di akibatkan float kalau mau lihat bisa saja hapuis
+    cluar nya nanti bakalan kelihatan perbedaannya
+    */
+}
+/* nah fungsi float itu bisa dilihat seperti yang menggunakan 
+gamabr tersebut jadi dia di paksa di sebelah kiri
+dari elemen parent nya atau utamanyua   */
+.cobagalery{
+    width: 600px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+}
+.kotak{
+    height: 100px;
+    width: 100px;
+    color:white;
+    line-height: 90px;
+    text-align: center;
+    background-color: salmon;
+    font-size: 20px;
+    float: right;
+    margin: 5px;
+    /*itu salah satu kelebihan float
+        saat dipanggil float roght
+        maka otomatis angka urutnya akan 
+        dari kanan */
+}
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+            /* properti transform 
+            memungkingkan kita dapat memanipuilasi format visual dari elemen HTML
+            transformasi ada 2 jenis yaitu 2D & 3D
+            transform : <fungsi>;
+                    - SCALE
+                        memperbesar/ memperkecil
+                    - ROTATE
+                        memutar
+                    - SKEW
+                        membuat condong /miring
+                    - TRANSLATE
+                        mengubah posisi
+            */
+    /* 
+        scale (angka), scaleX(angka), scaleY(angka),
+        rotate(deg), rotateX(deg), rotateY(deg),
+        skew(deg), skewX(deg), skewY(deg)
+        translate(px), translateX(px), translateY(px)
+    */
+    body{
+        text-align: center;
+        font-size: 20px;
+        font-family: roboto;
+
+    }
+
+    .kotak{
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        margin: 50px auto 0;
+        transition: 1s;
+    }
+    .kotak:hover{
+        transform: scale(1.5) rotate(45deg) translate(100px,50px);
+    }
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae distinctio velit vel laborum, veritatis reprehenderit, omnis eveniet sint dicta modi at a quae voluptates, cumque ducimus. Optio esse sunt fuga?</p>
+</body>
+</html>

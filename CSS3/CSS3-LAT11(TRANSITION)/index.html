@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        /*  perbedaan antara transition dengan animation
+
+            TRANSITION hanya memiliki perubahan awal dan akhir
+            ANIMATION memiliki keyframe (transition) lebih dari satu keadaan
+        
+            parameter transition ada 4
+            transition: 
+            [property]      <durasi>    [fungsi]    [delay];   khusus duration wajib diisi
+               all         angka s/ms              angka s/ms
+          <nama property>                                       ini bisa diatur sesuai keinginan dari kita saat kita memberi banyak properti pada transition
+             none
+            
+
+             untuk [fungsi]
+             fungsi sendiri dikatakan nama lainnya sebagai TIMING FUCTION
+             isinya :
+             ease                       : perbuhan halus awal dan akhir
+             ease -in                   : perubahan halus di awal
+             ease-out                   : perubahan halus di akhir
+             ease-in-out                : perubahan halus di akhir dan di awal
+             linear                     : linear tidak ada halusnya ya rata
+             cubic-bezier(w,x,y,z)      : ini untuk membuat custom pada transition bisa sesuka hati gerakannya
+        */
+            .contain{
+                border: 1px solid black;
+                height: 100px;
+                width: 900px;
+                margin: 50px auto 0
+            }
+            .kotak {
+                height: 90px;
+                width: 90px;
+                background-color: salmon;
+                margin: 5px 5px;
+                transition: background-color 1s ease, transform 1s linear 2s;
+            }
+            .contain:hover .kotak{
+                background-color: blue;
+                transform: translate(800px);
+            }
+    </style>
+</head>
+<body>
+        <div class="contain">
+            <div class="kotak"></div>
+        </div>
+</body>
+</html>

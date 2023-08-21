@@ -1,0 +1,17 @@
+/////////////// API (APLICATION PROGRAMING INTERFACE)  ////////////////////
+
+DEFINISI DARI API FORMAL ADALAH SEKUMPULAN FUNGSI, SUBROUTUIN, PROTOKOL KOMUNIKASI ATAY KAKAS/TOOLS,
+UNTUK MEMBUAT PERANGKAT LUNAK
+
+/////INTERFACE (AntarMuka) /////////
+ adalah Bagian yang sama antara dua atau lebih komponen terpisah pada
+ sebuah sistem komputer
+
+interface kalau didefinisiakn itu sebuah tempat untuk satu hal yang diigningkan
+
+contoh interface Slot Ram Pada mobo jadi itu interface
+jadi lebih ke konverter karena tugasnya interface untuk menghubung dua hal
+
+//////////////////API/////////////////
+1. Antarmuka yang berupa kumpulan fungsi yang dapat di-panggil ataudi
+    atau di jalankan oleh program lain. lebih ke libari sih

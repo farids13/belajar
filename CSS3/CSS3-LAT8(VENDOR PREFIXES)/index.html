@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Coba Prefixes</title>
+    <!--
+        yaitu sebuah sintaks khusus yang harus ditambahkan untuk beberapa property CSS3
+        dari kata prefix sendiri yaitu artinya awalan
+        alasan harus ditambahakn prefix ini karena tidak semua web browser suport css3
+
+            VENDOR PREFIXES
+        -webkit- (Chrome, Safari, Opera Versi terbaru)
+        -moz- (Firefox)
+        -ms- (Internet explorer)
+        -o- (opera versi terdahulu)
+    -->
+    <style>
+        body{
+            text-align: center;
+        }
+        img{
+            /* coba bandingkan internet explorer sama chrome 
+            untuk chrome yang sekarang udah tidak butuh prefix alias sudah di setingkan sama web broser nya
+            tapi tidak dengan internet explorer bisa dilihat perbadingannya 
+            nah kalau ingin di internet explorer bisa membaca filter di bawah ini maka wajib 
+            diberi prefix supaya filter ini bisa di baca 
+            -o filter: grayscale(100%);
+            */
+            
+            filter: grayscale(50%);
+            -moz-filter: grayscale(100%);
+            filter : url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+            -webkit-filter : grayscale(50%);
+            filter : grayscale(100%)
+
+            /* property apa saja yang membutuhkan vendor prefixes 
+                bisa mengunjungin beberapa website
+                shouldiprefixes.com
+                caniuse.com
+                http://pleeease.iamvdo.me/play/
+            */
+        }
+    </style>
+</head>
+<body>
+    <img src="1.jfif" alt="gambar">
+</body>
+</html>

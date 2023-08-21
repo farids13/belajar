@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadow</title>
+    <style>
+        .hello {
+            height: 300px;
+            width: 300px;
+            border: 5px solid black;
+            margin: auto;
+            text-align: center;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 5px 5px 10px green;
+            /* untuk value dari text shadow format penulisannya sama dengan box shadow dan bisa di multiple juga
+            text-shadow : (x-offset) (y-offset) (blur) (color)
+            */
+        }
+        .hello:hover{
+            text-shadow: 5px 5px 10px blue,
+                         10px 10px 10px red
+
+                ;
+        }
+        .hai {
+            height: 300px;
+            width: 300px;
+            border: 5px solid red;
+            margin: auto;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="hello">ini pake div</div>
+    <h1 class="hai">ini pake h1</h1>
+</body>
+</html>

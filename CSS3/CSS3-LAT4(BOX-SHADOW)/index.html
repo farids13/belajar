@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayangan BOX (box-shadow)</title>
+    <style>
+        .kotak-shadow{
+            background-color: rgba(255,0,0,0.5);
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            /* box shadow memiliki aturan 4 nilai yang harus ada di properti box shadow
+                (x-offset) (y-offset) (blur) (color)
+                2 optional value
+                <inset> (x-offset) (y-offset) (blur) <spread> (color)
+                    //spread itu untuk mempertabal atau memperkecil ukuran dari bayangannya sama kayak di photosop
+                    // sendangkan inset itu fungsinya untuk membalik bayangannya akan ada di dalam
+                    
+            */
+            box-shadow: 5px 5px 20px rgba(0,0,0,0.76);
+        }
+        .kotak-spread{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            margin:  100px auto;
+            box-shadow: 0px 30px 20px -20px rgba(0,0,0,0.7);
+            transition: .3s;
+        }
+        .kotak-spread:hover{
+
+            box-shadow: inset 0px 50px 20px 30px rgba(0,0,0,0.7),
+                        -50px -20px 30px rgba(0,0,255,1)
+            ;
+            /* kalau mau nambah tinggal kasih aja koma terus tulis sesuai propertinya 
+            
+            box shadow juga bisa menggunakan multiple atau bisa buat 2 atau lebih bayangan
+            dengan cara menambahkan coma di belakang sintaksnya, liat codind diatas*/
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="kotak-shadow"></div>
+    <div class="kotak-spread"></div>
+</body>
+</html>

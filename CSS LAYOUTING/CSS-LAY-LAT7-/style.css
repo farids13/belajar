@@ -1,0 +1,131 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Ini Syle Css Dibawah*/
+body{
+    font: 16px/28px arial, sans-serif;
+    background-color: burlywood ;
+    background-image: url(img/Savin-NY-Website-Background-Web.jpg);
+    
+}
+.container{
+    width: 800px;
+    margin: auto;
+    background-color: white;
+    box-sizing: border-box;
+}
+.judul{
+    margin: 10px auto;
+    font-size: 40px;
+    font-weight: bold;
+}
+.header{
+    padding: 10px;
+}
+.header ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+.header a{
+    text-decoration: none;
+    color: salmon;
+}
+/* hover digunakan untuk saat mouse menyentuk aja bagian object*/
+
+.header a:hover{
+    color: blue;
+}
+
+
+/* ini bagian gambar */
+
+.gambar{
+    height: 300px;
+    background-color: black ;
+    background-image: url(img/PC-Game.jpg);
+    background-size: cover ;
+    background-position: 0 -20px ;
+    border: 2px solid salmon;
+    margin: 30 px auto;
+}
+
+.content h2{
+    margin-top: 20px;
+    margin-left: 5px;
+    font: 20px arial;
+    font-weight: bold;
+}
+.content p{
+    font: 10px arial;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.content a{
+    text-decoration: none;
+    color: salmon;
+}
+.content a:hover{
+    color:blue
+}
+h3{
+    padding: 10px;
+    margin-top: 20px;
+}
+h4{
+    padding: 10px;
+    margin-top: 20px;
+}
+.footer{
+    background-color: black;
+    text-align: center;
+}
+.footer p{
+    color: white;
+    font-size: 12px;
+}

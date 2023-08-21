@@ -1,0 +1,26 @@
+div{
+    width: 700px ;
+    margin:10px auto;
+    box-sizing: border-box;
+    /*box sizing untuk membuat semua box sesuai dengan
+    ukuran width nya jadi walaupun dikasih border
+    ukuran sebuah box tidak akan bertambah jadi pasti 
+    sesuai dengan ukuran width nya*/
+}
+.boxsizing{
+    background-color: blue;
+    padding: 10px;
+    border : 5px dotted red
+
+}
+.lorem{
+    background-color: yellow;
+    padding: 10px;
+    border :5px solid black;
+    /*untuk border ini sintax formatnya 
+    border : ukuran tebal nya; jenis bordernya; warna
+    style pada border ada solid dotted dashed double*/    
+}
+/*padding ini hampir sama seperti margin 
+akan tetapi ini bagian dalam sehingga ini dapat
+mempengaruhi ukuran bertambah pada sebuah object atau box*/

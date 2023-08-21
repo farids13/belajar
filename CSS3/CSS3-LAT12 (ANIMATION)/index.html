@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .kotak  {
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            transition: 1s ease;
+            animation: animasikotak 2s ease infinite ; /* animasi ini menggunakan carasingkat cara panjanya nya juga bisa sama kayak margin bisa milih */
+            animation-direction: alternate;
+        }
+        .kotak:hover{
+            animation-play-state: paused;
+        }
+        @keyframes animasikotak{
+            0%{
+                width: 200px;
+            }
+            /*  yang bagian persen itu bisa digunakan from and to
+                atau juga bisa di buat persentase manteb kan
+            */
+            50%{
+                width: 500px;
+            }
+            100%{
+                width: 500px;
+                height: 500px;
+            }
+        }
+        /*  NILAI NILAI YANG BISA DI MASUKKAN DALAM ANIMATION FUCTION INI 
+            animation:
+            [name] [duration] [timing-fuction]
+            [delay] [iteration-count] [direction]
+            [fill-mode] [play-state]
+        */
+    </style>
+</head>
+<body>
+    <div class="kotak"></div>
+</body>
+</html>

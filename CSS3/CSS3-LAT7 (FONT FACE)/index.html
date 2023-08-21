@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Face</title>
+    <!--   
+        dalam font juga bisa memakai font yang ada di google cari aja di google font nanti lengkap sama sintaksnya disana
+
+
+
+    /* font face merupakan sebuah fitur dari css3 untuk memperluas jangakauan font yang ada
+
+        UNTUK SINTAKS LENGKAPNYA utuk jenisfontnya bisa sesuaikan dengan format font nya. tidak usah di pakai semua url nya
+        @font-face{
+            font-family 'NamaFontBaru';
+            src: url('lokasi/file/fontbaru.eot');
+                 url('lokasi/file/font-baru.eot#iefix') format('emmbedded-opentype'),
+                 url('lokasi/file/font-baru.woff2') format('woff2')
+                 url('lokasi/file/font-baru.woff') format('woff'),
+                 url('lokasi/file/font-baru.ttf/otf') format('truetype')   ini yang paling sering digunakan
+                 url('lokasi/file/font-baru.svg#svgFontName') format('svg')
+
+            KALAU BISA FONT MENGGUNAKAN YANG FORMAT WOFF KARENA WOFF LEBIH CEPAT
+            NAH KALAU FONT MU MENGGUNAKAN FORMAT TTF/OTF MAKA BISA DIGANTI
+            DENGAN MENGGUNAKAN WEB FONT GENERATOR BANYAK DI GOOGLE
+        }
+     */
+    -->
+    <style>
+        @font-face {
+            font-family: "Font-farid";
+            src: url(Font/Library3am-5V3Z.otf);
+        }
+        h1{
+            font-size: 100px;
+            text-align: center;
+            font-family: "Font-farid", arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>helloworld</h1>
+</body>
+</html>

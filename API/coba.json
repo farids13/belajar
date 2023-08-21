@@ -1,0 +1,21 @@
+[
+    {
+        "nama" : "Farid Satria",
+        "umur" : 32,
+        "NIK"  : "17050514006",
+        "lulus": true,
+        "hobby": [
+            "coding",
+            "gaming"],
+        "pembimbing": {
+            "Pembimbing1": "Syarif",
+            "Pembimbing2": "joko"
+        }
+    }
+]
+/* Pada PHP
+    ada 2 json
+    .json_encode()
+    .json_decode()
+
+*/

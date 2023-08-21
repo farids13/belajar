@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity</title>
+    <style>
+        body{
+            background-image: url(bg.jpg);
+        }
+        .satu{
+            background-color: hsla(24, 100%, 63%, 1);
+            height: 200px;
+            width: 200px;
+            margin: auto;
+            opacity: 0.95;
+            position: relative;
+        }
+        .dua{
+            background-color: rgba(0, 0, 255, 0.5);
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            right: -50px;
+            bottom: -50px;
+        }
+        /* pada opacity apabila div parent atau pembungkusnya contohnya itu satu dan dua nya itu 
+            sebagai anak dari yang satu intinya di bungkus dalam div atau lain
+            maka opacity tersebut akan mengikuti dari parent nya tersebut
+            kalau di satu kita beri opacity 0.5 maka anaknya atau yang kedua
+            akan ikut 0.5 kalau ditambah maka akan di tambah dan dibagi 2
+            pahamkan !!!!    
+            kalau ada kasus parent nya tidak opacity sedangkan anaknya opacity
+            itu mudah yang sulit itu
+            kalau ada anaknya tidak opacity parentnya opacity
+            nah itu akan ada cara lain yaitu menggunakan properti
+            rgba() (red gren blue alpha)
+            ALPHA disitulah yang opacity wkwk wkeren bangke
+            atau bisa juga pake 
+            hsla() (hue saturation lighness alpha)
+        */
+    </style>
+</head>
+<body>
+    <div class="satu">
+        <div class="dua"></div>
+    </div>
+</body>
+</html>

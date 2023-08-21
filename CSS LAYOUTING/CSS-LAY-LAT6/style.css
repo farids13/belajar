@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+/* itu yang disebut dengan css reset jadi fungsinya
+untuk menghilangkan margin default pada sebuah web 
+karena kalau anda membuat kotak maka nanti di pinggir
+kotak tersebut akan ada margin nya sehingga tidak bagus
+cara mengatasinya dengan margin css tersebut
+caranya bisa menggunakan 
+BODY atau * body seperti diatas 
+bintang bisa dilihat di bawah
+artinya bintang itu untuk selectior universal 
+jadi semua nya akan kereset marginnya 
+
+atau bisa juga menggunakan metode css reset
+nanti ada metode mayerweb nanti copi kodingannya
+tinggal lanjut
+
+*/
+*{
+    margin: 0;
+}
+div{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    margin: auto;
+}
+.h1{
+    width: 600px ;
+    margin: 10px auto;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+.satu{
+    border: 5px dashed blue;
+    margin: 10px auto;
+    width: 500px;
+}

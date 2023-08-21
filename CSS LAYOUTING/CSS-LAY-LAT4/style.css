@@ -1,0 +1,50 @@
+div {
+    display: inline-block;
+}
+/*fungsi div itu untuk memberikan semua class perintah yang sama
+seperti contoh di atas display iniline yang artinya 
+semua class satu dua dan tiga yang ada di css ini akan 
+di beri perintah untuk meng inline blok setiap class nya jadi 
+yang terjadi setiap box akan ter inline di satu garis
+atau dalam lingkup satu garis horisontal atau sudut X*/
+.satu{
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 2%; 
+    /* margin adalah tepian yang transparent
+       margin juga bisa di beri nilai negatif
+       kalau terjadi OVERLAPING MARGIN  atau 
+       disebut margin yang doble misal pada objek 1
+       margin bawah 10 pada objek dua margin atas 20
+       kalau di vertikal itu tidak akan bertambah itu udah dari sononya
+       kalau horizontal kudu pake display : inline atau
+       inline-block maka itu disebut tabrakan margin 
+       karena margin tidak terlihat alias transparant
+       
+       nilai auto juga bisa digunakan untuk memberikan nilai 
+       secara otomatis sampai di ujung tembok element jadi 
+       kalau mau membuat tengah cukup mudah dengan cara
+       memberikan margin left auto dan rigt auto pada object
+
+    */
+}
+.dua{
+    width: 50px;
+    height: 100px;
+    background-color: red; 
+    margin-left: -20px;
+
+}
+.tiga{
+    width: 20px;
+    height: 50px;
+    background-color: green;
+    /*cara menyingkat margin itu bisa menggunkan langsung
+    margin : nilai atas nilai kiri atau kanan nilai bawah
+    bisa di lihat seseuai arah jarum jam kalau menggunakan 4 nilai*/
+    margin: 10px 20px 30px 40px;
+    margin: 200px
+}
