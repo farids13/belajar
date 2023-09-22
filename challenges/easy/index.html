@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halo Dok Hero</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 5vh 20vh 2vh;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        li{
+            list-style-type: none;
+        }
+        .navigation{
+            display: flex;
+            gap: 2%;
+            align-items: center;
+        }
+        .login{
+            margin-left: auto;
+        }
+        .book{
+            padding: 5px;
+            border: 2px solid black;
+        }
+        footer > div {
+            display: flex;
+            margin: 0%;
+            padding: 50px;
+            background-color: #203271;
+            color: white;
+        }
+        footer > div > section > svg {
+            width: 50px;
+        }
+        footer > div > section{
+            display: flex;
+            margin-right: 10px;
+            align-items: start;
+            gap: 10px;
+            padding: 0;
+        }
+        .article-footer h4, p{
+            margin: 0;
+        }   
+        .hero{
+            margin-top: 2vh;
+            display: flex;
+            justify-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        .hero section{
+            margin-top: 10em;
+            max-width: 35%;
+            height: 20%;
+        }
+        .hero img{
+            max-width: 50%;
+            height: auto;
+        }
+        .hero h1{
+            font-size: 30px;
+        }
+        .hero button{
+            margin-top: 20px;
+            padding: 2vh;
+            background-color: #203271;
+            color: white;
+            font-weight: bold;
+        }
+        .rectangle{
+            position: absolute;
+            width: 650px; 
+            right: 150px;
+            top: 20px;
+            z-index: -1;
+        }
+
+        .comment{
+            position: absolute;
+            width: 18em;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            top: 16em;
+            left: 45em;
+            background-color: white;
+        }
+
+        .comment div{
+            margin-bottom: 10px;
+            display: flex;
+
+        }
+        .comment h3{
+            margin-left: 20px;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .bi-quote{
+            margin-left: auto;
+            opacity: 0.4;
+        }
+
+        *{
+            /* border: 1px solid red; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <img src="./images/logo.png" alt="">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About Us</a></li>
+            <li class="login" ><a href="#">Login</a></li>
+            <li class="book"><a href="#">Book Now</a></li>
+
+        </nav>
+    </header>
+    <main>
+        <article class="hero">
+            <section>
+                <h1>Get the healthcare you need, when you need it.</h1>
+                <p>Manage all of your healthcare needs in one convenient
+                    place – from booking appointments to tracking your
+                    health history.</p>
+                <div>
+                    <button>Book an Appointment</button>
+                </div>
+            </section>
+
+            <img class="rectangle" src="./images/Rectangle 1.png" alt="Rectangle">
+            <img src="./images/hero.png" alt="Hero Image">
+        </article>
+
+        <section class="comment">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+                  </svg>
+                <h3>Farid Satria</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" fill="currentColor" class="bi bi-quote" viewBox="0 0 16 16">
+                    <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                  </svg>
+            </div>
+            <article>
+                “The doctor appointment app has been great for me. 
+                Scheduling appointments and getting medication 
+                reminders is much easier, and I love the option 
+                for virtual consultations. I'd recommend this app to
+                others.”
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <section>
+                <svg xmlns="http://www.w3.org/2000/svg" width="90" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                    <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                </svg>
+                <div class="article-footer">
+                    <h4>Online appointment scheduling</h4>
+                    <p>Allows users to schedule appointments with their healthcare provider through the app.</p>
+                </div>
+            </section>
+            <section>
+                <svg xmlns="http://www.w3.org/2000/svg" width="90" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556v4.35zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H2z"/>
+                </svg>
+                <div class="article-footer">
+                    <h4>Virtual consultations</h4>
+                    <p>Allows users to schedule appointments with their healthcare provider through the app.</p>
+                </div>
+            </section>
+            <section>
+                <svg xmlns="http://www.w3.org/2000/svg" width="90" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                </svg>
+                <div class="article-footer">
+                    <h4>Medication reminders</h4>
+                    <p>Allows users to schedule appointments with their healthcare provider through the app.</p>
+                </div>
+            </section>
+        </div>
+        <h5>Copyright 2023 Farid Satria</h5>
+    </footer>
+</body>
+</html>

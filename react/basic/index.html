@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba React Dengan CDN</title>
+</head>
+<body>
+    <div id="root"></div>
+    <div id="again"></div>
+    <div id="jsxdiv"></div>
+</body>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script type="text/babel">
+    // const root = document.querySelector('#root');
+
+    // const element = document.createElement('h1');
+    // element.textContent = "Hallow Ini Test manipulation data with Java script";
+    // element.className="header-1";
+
+    // root.appendChild(element);
+
+    const root = document.querySelector('#root');
+
+    const p1 = React.createElement('p', {
+        children: 'hellow ini parahraf 1'
+    });
+
+    const p2 = React.createElement('p2', {
+        children : 'Hellow Ini Paragraph ke dua',
+    });
+
+    const element = React.createElement(React.Fragment, {
+        children: [p1, p2],
+        className: 'heading-1'
+    });
+
+    //codingan semacam diatas itu bisa di sederhanakan menggunakan babel, modelan type script lah pasti kamu paham
+    const jsxdiv = document.querySelector('#jsxdiv');
+    const name = "Hallow Om";
+
+    function capitalDong(input){
+        return input.toUpperCase();
+    }
+
+    const varClass = "list";
+    // img di jsx harus pake subclosing <img/> kasih / om kalau html biasa gak usah gak masalah
+    const varImg = <img src="https://source.unsplash.com/200x200/?flower"/>
+    
+    //kenapa pake nama props, buka inspect element soalnya dari react component ngirimnya berupa OBJECT
+    function Component(props){
+        return (
+            <>
+            <h1>Hallow Om {props.name}</h1>
+            <h2>Hallow Om {props.name}</h2>
+            </>
+        );
+    };
+
+
+    function tick(){
+
+    
+    const jsx = (
+        <ul>
+            <li>{new Date().toLocaleTimeString()}</li>
+            <li>apple</li>
+            <li>Banana</li>
+            <li>Chocolate</li>
+            <li>ini menggunakan format babel</li>
+            <li>Cara ini dapat memasukkan value ke jsx {name}</li>
+            <li>Hari ini tanggal : {new Date().toString()}</li>
+            <li>Bisa juga di masukkan function {capitalDong("ini wajib kapital")}</li>
+            <li className={varClass}>Ini Contoh Props yang menggunakan variable di jsx jangan kasih kutip ya Om</li>
+            <li>{varImg}</li>
+            <li>Di bawah Ini Akan Menggunakan React Component Lihat Aja di bawah</li>
+            <li><Component name = "gede"/></li>
+        </ul>
+        ); 
+        ReactDOM.render(jsx, jsxdiv);
+    }
+    // setInterval(function(){
+    //     tick();
+    // }, 2000)
+
+    // cara diatas bisa di atasi dengan cepat menggunakan format jsx
+
+
+    const root1 = document.querySelector('#again');
+    
+    const element1 = React.createElement('h2', {
+        children: 'Ini Element Ke dua',
+        className: 'heading-1'
+    });
+
+
+    ReactDOM.render(element1, root1);
+    ReactDOM.render(element, root);
+</script>
+</html>
